@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import rigoImageUrl from "../../img/rigo-baby.jpg";
+import { Link } from "react-router-dom";
 import "../../styles/home.css";
 
 export const Home = () => {
@@ -15,6 +16,7 @@ export const Home = () => {
 			<div className="alert alert-info">
 				{store.message || "Loading message from the backend (make sure your python backend is running)..."}
 			</div>
+			<Link to="/maintenanceTask">Go to Maintenance Task Form</Link>
 			<p>
 				This boilerplate comes with lots of documentation:{" "}
 				<a href="https://start.4geeksacademy.com/starters/react-flask">
